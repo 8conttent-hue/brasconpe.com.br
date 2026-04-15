@@ -1,0 +1,53 @@
+---
+// Posts-I: Numbered Index Guide - Design estruturado para tutoriais e guias
+import { getAllPosts } from '../lib/posts';
+interface Props { title: string; limit: number; btnText: string; btnLink: string; }
+const { title, limit, btnText, btnLink } = Astro.props;
+
+const posts = (await getAllPosts()).slice(0, limit);
+---
+<section class="py-24 bg-white overflow-hidden border-y border-gray-100">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="mb-24 flex items-center gap-12">
+       <div class="flex-shrink-0 flex items-center justify-center w-24 h-24 rounded-full bg-primary text-white text-3xl font-black italic shadow-2xl">
+          0{posts.length}
+       </div>
+       <div class="flex-1">
+          <span class="text-[10px] font-black uppercase text-gray-400 tracking-[0.4em] mb-3 block">Indice de Conteúdo</span>
+          <h2 class="text-4xl md:text-6xl font-black text-dark tracking-tighter italic leading-none">{title}</h2>
+       </div>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12 lg:gap-20">
+      {posts.map((post, i) => (
+        <article class="group relative flex gap-8 items-start pb-12 border-b border-gray-100 last:border-0 last:pb-0">
+          <!-- Number background -->
+          <div class="absolute -top-12 -left-12 text-[12rem] font-black text-gray-50 -z-0 group-hover:text-primary/5 transition-colors select-none leading-none">
+             0{i+1}
+          </div>
+          
+          <!-- Image -->
+          <div class="w-32 h-44 flex-shrink-0 rounded-2xl overflow-hidden shadow-xl relative z-10">
+             <img src={post.heroImage} class="w-full h-full object-cover transition-transform group-hover:scale-110" alt={post.title} />
+             <div class="absolute inset-0 bg-dark/20 group-hover:opacity-0 transition-opacity"></div>
+          </div>
+
+          <div class="relative z-10 flex flex-col pt-4 h-full">
+            <span class="text-[10px] font-black uppercase text-primary tracking-widest mb-4 group-hover:translate-x-2 transition-transform inline-block">{post.category || 'Guia'}</span>
+            <h3 class="text-2xl font-black text-dark leading-tight tracking-tight mb-6 group-hover:text-primary transition-colors italic uppercase">
+               <a href={`/${post.slug}`}>{post.title}</a>
+            </h3>
+            <p class="text-sm text-gray-400 leading-relaxed font-serif line-clamp-3 mb-8">
+               {post.description}
+            </p>
+            <footer class="mt-auto flex items-center gap-4 text-[10px] font-bold text-gray-300 uppercase tracking-widest">
+               <span class="px-2 py-1 bg-gray-50 rounded">Leitura Rápida</span>
+               <span>•</span>
+               <span>{new Date(post.pubDate).toLocaleDateString('pt-BR', { day: 'numeric', month: 'short' })}</span>
+            </footer>
+          </div>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

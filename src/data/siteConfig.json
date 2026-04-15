@@ -1,0 +1,53 @@
+{
+  "name": "BRASCONPE",
+  "slug": "brasconpe.com.br",
+  "description": "Olá! Sou a professora Marlene Dias, e também fundadora deste maravilhoso blog. Adoro compartilhar meus conhecimentos e ajudar diversas pessoas com dicas e conteúdos 100% online a conseguir estudar ainda mais para seus objetivos. Acretido qua a Educação é o caminho para todos nós alcançarmos nossos objetivos e com isso tenho duas ambições: Auxiliar todos que estejam no objetivo de aprovação no enem ou no seu concurso dos sonhos de forma completamente gratuíta. Inovar com ideias criativas para educar crianças de eficar e alegre, construindo o conhecimento através do brincar. Sou formada em Letras e Pedagogia, tenho vasta experiencia nas escolas públicas do estado do Rio de janeiro e São Paulo, atuei por mais de 20 anos como professora Estadual. Amo estar na escola e no ambiente acadêmico! Mas acredito que a sala de aula não é possível para todos então venho atráves do meu blog passar todas as minhas vivencias e experiencias. “Escolha um trabalho que você ama e você nunca terá que trabalhar um dia sequer na vida”. Conhece essa frase? Ela me descreve totalmente!”",
+  "url": "https://brasconpe.com.br",
+  "niche": "Educação",
+  "keywords": "Ola Sou a professora Marlene Dias e tambem fundadora deste maravilhoso blog",
+  "email": "contato@brasconpe.com.br",
+  "palette": "teal",
+  "colors": {
+    "primary": "#0d9488",
+    "accent": "#0f766e",
+    "dark": "#042f2e"
+  },
+  "headerContrast": "light",
+  "font": "montserrat",
+  "fontFamily": "'Montserrat', sans-serif",
+  "fontUrl": "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap",
+  "components": {
+    "header": "Header-F",
+    "hero": "Hero-B",
+    "features": "Features-A",
+    "about": "About-E",
+    "posts": "Posts-I",
+    "footer": "Footer-C",
+    "sobre": "Sobre-D",
+    "contato": "Contato-C"
+  },
+  "menu": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Blog",
+      "href": "/blog"
+    },
+    {
+      "label": "Sobre",
+      "href": "/sobre"
+    },
+    {
+      "label": "Contato",
+      "href": "/contato"
+    }
+  ],
+  "social": {
+    "instagram": "",
+    "facebook": "",
+    "twitter": "",
+    "youtube": ""
+  }
+}

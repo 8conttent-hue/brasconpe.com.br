@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Sobre Nós",
+    "description": "Conheça o BRASCONPE"
+  },
+  "hero": {
+    "title": "Sobre Nós",
+    "subtitle": "Sou formada em Letras e Pedagogia, e tenho uma paixão profunda por educar e inspirar. Aqui no BRASCONPE, compartilho meus conhecimentos e experiências para ajudar você a alcançar seus objetivos educacionais, seja no ENEM ou na sua carreira profissional."
+  },
+  "content": "A educação é a chave para transformar vidas. Com o BRASCONPE, busco democratizar o acesso a conteúdos educacionais de qualidade, tornando-o gratuito e acessível a todos.",
+  "mission": "Auxiliar na aprovação de estudantes no ENEM e em concursos, além de fomentar o aprendizado lúdico entre crianças.",
+  "image": "/images/sobre.jpg",
+  "stats": [
+    {
+      "value": "1.200+",
+      "label": "Artigos"
+    },
+    {
+      "value": "300k+",
+      "label": "Alunos"
+    },
+    {
+      "value": "25",
+      "label": "Professores"
+    }
+  ],
+  "team": []
+}

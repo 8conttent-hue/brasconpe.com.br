@@ -1,0 +1,56 @@
+{
+  "meta": {
+    "title": "BRASCONPE — Bem-vindo ao BRASCONPE!",
+    "description": "Aprenda e conquiste seus sonhos com a professora Marlene Dias."
+  },
+  "hero": {
+    "title": "Bem-vindo ao BRASCONPE!",
+    "subtitle": "Aprenda e conquiste seus sonhos com a professora Marlene Dias.",
+    "btnText": "Comece agora",
+    "bgImage": "/images/hero.jpg",
+    "btnLink": "/blog"
+  },
+  "features": {
+    "title": "O que oferecemos",
+    "items": [
+      {
+        "icon": "📚",
+        "title": "Conteúdos Gratuitos",
+        "desc": "Acesse materiais de estudo para o ENEM e concursos de forma totalmente gratuita."
+      },
+      {
+        "icon": "🎨",
+        "title": "Educação Criativa",
+        "desc": "Dicas inovadoras para ensinar crianças de maneira divertida e eficaz."
+      },
+      {
+        "icon": "👩‍🏫",
+        "title": "Experiência Valiosa",
+        "desc": "Mais de 20 anos de experiência em escolas públicas nas maiores cidades do Brasil."
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre a Professora Marlene Dias",
+    "desc": "Sou formada em Letras e Pedagogia, e tenho uma paixão profunda por educar e inspirar. Aqui no BRASCONPE, compartilho meus conhecimentos e experiências para ajudar você a alcançar seus objetivos educacionais, seja no ENEM ou na sua carreira profissional.",
+    "stats": [
+      {
+        "value": "20+",
+        "label": "Anos de Experiência"
+      },
+      {
+        "value": "1000+",
+        "label": "Alunos Inspirados"
+      }
+    ],
+    "image": "/images/about.jpg",
+    "btnText": "Saiba Mais",
+    "btnLink": "/sobre"
+  },
+  "posts": {
+    "title": "Últimos Artigos",
+    "limit": 3,
+    "btnText": "Ver Blog",
+    "btnLink": "/blog"
+  }
+}
