@@ -1,10 +1,10 @@
 ---
 // Posts-I: Numbered Index Guide - Design estruturado para tutoriais e guias
-import { getAllPosts } from '../lib/posts';
+import { getPosts } from '../lib/posts';
 interface Props { title: string; limit: number; btnText: string; btnLink: string; }
 const { title, limit, btnText, btnLink } = Astro.props;
 
-const posts = (await getAllPosts()).slice(0, limit);
+const posts = (await getPosts()).slice(0, limit);
 ---
 <section class="py-24 bg-white overflow-hidden border-y border-gray-100">
   <div class="max-w-6xl mx-auto px-4">
@@ -28,22 +28,22 @@ const posts = (await getAllPosts()).slice(0, limit);
           
           <!-- Image -->
           <div class="w-32 h-44 flex-shrink-0 rounded-2xl overflow-hidden shadow-xl relative z-10">
-             <img src={post.heroImage} class="w-full h-full object-cover transition-transform group-hover:scale-110" alt={post.title} />
+             <img src={post.featured_image} class="w-full h-full object-cover transition-transform group-hover:scale-110" alt={post.title} />
              <div class="absolute inset-0 bg-dark/20 group-hover:opacity-0 transition-opacity"></div>
           </div>
 
           <div class="relative z-10 flex flex-col pt-4 h-full">
-            <span class="text-[10px] font-black uppercase text-primary tracking-widest mb-4 group-hover:translate-x-2 transition-transform inline-block">{post.category || 'Guia'}</span>
+            <span class="text-[10px] font-black uppercase text-primary tracking-widest mb-4 group-hover:translate-x-2 transition-transform inline-block">Artigo</span>
             <h3 class="text-2xl font-black text-dark leading-tight tracking-tight mb-6 group-hover:text-primary transition-colors italic uppercase">
                <a href={`/${post.slug}`}>{post.title}</a>
             </h3>
             <p class="text-sm text-gray-400 leading-relaxed font-serif line-clamp-3 mb-8">
-               {post.description}
+               {post.meta_description}
             </p>
             <footer class="mt-auto flex items-center gap-4 text-[10px] font-bold text-gray-300 uppercase tracking-widest">
                <span class="px-2 py-1 bg-gray-50 rounded">Leitura Rápida</span>
                <span>•</span>
-               <span>{new Date(post.pubDate).toLocaleDateString('pt-BR', { day: 'numeric', month: 'short' })}</span>
+               <span>{new Date(post.published_at).toLocaleDateString('pt-BR', { day: 'numeric', month: 'short' })}</span>
             </footer>
           </div>
         </article>
